@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="header-box">
+            <div class="doc-lang-navigation-box"> <select class="doc-lang__selector" name="lang" id="lang">
+                    <option class="lang-selector__item" value="eng">eng</option>
+                    <option class="lang-selector__item" value="ukr">ukr</option>
+                    <option class="lang-selector__item" value="fr">fr</option>
+                </select>
+                <nav class="doc-navigation"><a href="">Documentation </a><span>&#47;</span>
+                    <a href="https://nataliiabohdan.github.io/flip-card-14/">Who's using</a>
+                </nav>
+            </div>
+            <a class="doc-logo" href=""><img src="images-1/company-logo-black.svg" alt="our logo"></a>
+        </section>
+    </header>
+    <main class="main-wrapper">
+        <section class="aside-box">
+            <a href="#Introduction">
+                <h2 class="aside-box__item">Introduction</h2>
+            </a>
+            <a href="#Core">
+                <h2 class="aside-box__item">core components</h2>
+            </a>
+            <a href="#React">
+                <h2 class="aside-box__item">react fundamentals</h2>
+            </a>
+            <a href="#Handling">
+                <h2 class="aside-box__item">handling text input</h2>
+            </a>
+        </section>
+        <section class="info-box">
+            <div class="background-image"><img src="images-1/bg-picture.png" alt=""></div>
+            <ul class="section-wrapper">
+                <li class="section" id="Introduction">
+                    <div class="section__full-title">
+                        <h2 class="section__name section__name_first">Introduction</h2><sup>Chapter
+                            1</sup>
+                    </div>
+                    <p class="section__paragraph section__paragraph_first">Welcome to the very start of your React
+                        Native journey! If you're looking for environment setup
+                        instructions, they've moved to <span class="underline">their own section</span>. Continue
+                        reading for an
+                        introduction to the
+                        documentation, Native Components, React, and more!</p>
+                </li>
+                <li class="section" id="Core">
+                    <div class="section__full-title">
+                        <h2 class="section__name section__name_second">core components</h2><sup>Chapter
+                            2</sup>
+                    </div>
+                    <p class="section__paragraph section__paragraph_second">React Native is an open source framework
+                        for
+                        building Android and iOS applications using React
+                        and
+                        the app platform's native capabiles. With React Native, you use JavaScript to access your
+                        platform's
+                        APIs as well as to describe the appearance and behavior of your UI using React components:
+                        <em>bundles
+                            of reusable, nestable code</em>. You can learn more about React in the next section. But
+                        first,
+                        let's
+                        cover how components work in React Native.
+                    </p>
+                </li>
+                <li class="section" id="React">
+                    <div class="section__full-title">
+                        <h2 class="section__name section__name_third"">react fundamentals</h2><sup>Chapter
+                            3</sup>
+                    </div>
+                    <p class=" section__paragraph section__paragraph_third">React Native runs on <span
+                                class="underline">React</span>, a popular
+                            open
+                            source library for building user interfaces with
+                            JavaScript. To make the most of React Native, it helps to understand React itself. This
+                            section
+                            can
+                            get you started or can serve as a refresher course.<br /><br />
+
+
+                            We're going to cover the core concepts behind React: <br /><br />
+                            <span class="bolt">+ components.</span> The rest of this introduction to React uses cats in
+                            its
+                            examples:
+                            friendly,
+                            approachable creatures that need names and a cafe to work in.<br /><br />
+                            <span class="bolt">+ JSX.</span> React and React Native use JSX, a syntax that lets you
+                            write
+                            elements inside
+                            JavaScript
+                            like
+                            so:<mark> &ltText&gt Hello, I am your cat! &lt/Text&gt.</mark><br /><br />
+                            The React docs have a comprehensive guide to JSX you can refer to learn even more. Because
+                            JSX
+                            is
+                            JavaScript, you can use variables inside it. Here you are declaring a <mark>name</mark> for
+                            the
+                            cat,
+                            name,
+                            and
+                            embedding it with curly braces inside <mark>&ltText&gt</mark><br /><br />
+                            <span class="bolt">+ props.</span> Props is short for “properties”.<br /><br />
+                            <span class="bolt">+ state.</span> While you can think of props as arguments you use to
+                            configure how
+                            components
+                            render,
+                            state is like a component's personal data storage. State is useful for handling data
+                            that
+                            changes over time or that comes from user interaction. State gives your components
+                            memory!
+                            </p>
+                </li>
+                <li class="section" id="Handling">
+                    <div class="section__full-title">
+                        <h2 class="section__name section__name_forth">handling text input</h2><sup>Chapter
+                            4</sup>
+                    </div>
+                    <p class="section__paragraph section__paragraph_forth">TextInput is a Core Component that allows the
+                        user to enter text. It has an <em>onChangeText</em> prop
+                        that
+                        takes a function to be called every time the text changed, and an onSubmitEditing prop that
+                        takes a
+                        function to be called when the text is submitted.<br /><br />
+                        For example, let's say that as the user types, you're translating their words into a different
+                        language. In this new language, every single word is written the same way: 🍕. So the sentence
+                        "Hello there Bob" would be translated as "🍕 🍕".</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
